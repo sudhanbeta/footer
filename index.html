@@ -5,13 +5,15 @@
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
   .footer {
-    position: absolute;
-    width: 100%;
-    top:500%;
+    position:absolute;
+    top:300%;
     background: #3586ff;
     min-height: 100px;
+    min-width: 200px;
+    width: 105.6%;
+    margin-left: -10%;
     padding: 20px 10px 10px 10px;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -56,7 +58,6 @@
   .menu__link:hover {
     opacity: 1;
   }
-  
   .footer p {
     color: #fff;
     margin: 15px 0 10px 0;
@@ -65,12 +66,14 @@
   }
   
   .wave {
-    justify-content: flex-end;
-    align-items: flex-end;
     position: absolute;
-    top: -35%;
+    top: -47%;
     left: 0;
-    width: 100%;
+    right:0;
+    min-width: 110%;
+    margin-right: -0%;
+    margin-left: -10%;
+    width: 107%;
     height: 100px;
     background: url("https://i.ibb.co/wQZVxxk/wave.png");
     background-size: 1000px 100px;
@@ -103,7 +106,30 @@
     bottom: 20px;
     animation: animate 3s linear infinite;
   }
-  
+  .visible-scrollbar, .invisible-scrollbar, .mostly-customized-scrollbar {
+  display: block;
+  width: 10em;
+  overflow: auto;
+  height: 2em;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Demonstrate a "mostly customized" scrollbar
+ * (won't be visible otherwise if width/height is specified) */
+.mostly-customized-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #aaa; /* or add it to the track */
+}
+
+/* Add a thumb */
+.mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
   @keyframes animateWaves {
     0% {
       background-position-x: 1000px;
@@ -123,8 +149,14 @@
   }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
-  .footer, .menu,.wave {
+  .footer{
     width: 100%;
+  } .menu{
+    width: 100%;
+  }
+  .wave {
+    width: 100%;
+    height: 50%;
   }
 }
     </style>
