@@ -5,14 +5,13 @@
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
   .footer {
-    position:absolute;
-    top:300%;
+    position:fixed;
+    top:79%;
     background: #3586ff;
-    min-height: 100px;
-    min-width: 200px;
-    width: 99%;
-    margin-left: -10%;
+    left:0;
+    width: 100%;
     padding: 20px 10px 10px 10px;
+    height: 210px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +33,7 @@
   }
   
   .social-icon__link {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #fff;
     margin: 0 10px;
     display: inline-block;
@@ -61,19 +60,19 @@
   .footer p {
     color: #fff;
     margin: 15px 0 10px 0;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 80;
   }
   
   .wave {
     position: absolute;
-    top: -47% ;
+    top: -40% ;
     left: 0;
     right:0;
     min-width: 110%;
     margin-right: -0%;
     margin-left: -10%;
-    width: 107%;
+    width: 111%;
     height: 100px;
     background: url("https://i.ibb.co/wQZVxxk/wave.png");
     background-size: 1000px 100px;
@@ -151,12 +150,19 @@
   /* For mobile phones: */
   .footer{
     width: 100%;
+    height:150px;
   } .menu{
     width: 100%;
   }
   .wave {
     width: 100%;
-    height: 50%;
+    height: 100px;
+  }
+  .footer p{
+    font-size: 1.2rem;
+  }
+  .social-icon__link{
+    font-size: 2.0rem;
   }
 }
     </style>
@@ -185,16 +191,8 @@
         <li class="social-icon__item"><a class="social-icon__link" href="#">
             <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
           </a></li>
-      </ul>
-      <ul class="menu">
-        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-  
-      </ul>
-      <p>©2021 Cg Sudhan | All Rights Reserved</p>
+      </ul> 
+      <p style="font-family:monospace">©2021 Cg Sudhan | All Rights Reserved</p>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
   <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
@@ -202,5 +200,3 @@
 
     </body>
     </html>
-
-  
